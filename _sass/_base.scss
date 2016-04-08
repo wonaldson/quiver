@@ -76,7 +76,7 @@ aside {
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
-        @include sans-serif-font;
+        @include quiver-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
@@ -205,10 +205,6 @@ header {
     }
 }
 
-.quiver-logo {
-	font-family: "co-headline";
-    font-weight: 700;
-}
 
 // Sections
 
