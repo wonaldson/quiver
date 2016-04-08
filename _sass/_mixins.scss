@@ -64,3 +64,8 @@
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@mixin quiver-font()
+{
+	font-family: "co-headline";
+}
