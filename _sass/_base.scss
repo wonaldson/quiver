@@ -366,25 +366,26 @@ body {
     height:100%;
     width: 100%;
     cursor: pointer;
-    z-index: 1000; /* high z-index */
+    z-index: 10000; /* high z-index */
     background: #000; /* fallback */
     background: rgba(0,0,0,0.75);
 }
     .overlay-content {
-    	/* @include vertical-align; */
-        display: none;
-        background: #fff;
-        padding: 1%;
-        width: 27%;
-        top: 15%;
-        left: 50%;
-        /* margin: 0 0 0 -20%;add negative left margin for half the width to center the div */
-        cursor: default;
-        z-index: 10001;
-        border-radius: 4px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.9);
+      @include vertical-align(absolute);
+      display: none;
+      background: #fff;
+      padding: 1%;
+      width: 40%;
+
+      left: 50%;
+      top: 50% !important;
+      margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+      cursor: default;
+      z-index: 10001;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.9);
     }
- 
+
     .close-btn {
         /* cursor: pointer;
         border: 1px solid #333;
@@ -397,10 +398,10 @@ body {
     .close-btn:hover {
         background: #05abe0;
     }
- 
+
 /* media query for most mobile devices */
 @media only screen and (min-width: 0px) and (max-width: 480px){
- 
+
     .overlay-content {
         width: 96%;
         margin: 0 2%;
