@@ -371,7 +371,7 @@ body {
     background: rgba(0,0,0,0.75);
 }
     .overlay-content {
-    	@include vertical-align;
+    	/* @include vertical-align; */
         display: none;
         background: #fff;
         padding: 1%;
