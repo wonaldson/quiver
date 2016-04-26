@@ -18,6 +18,7 @@ $(document).ready(function(){
  
     // function to show our popups
     function showPopup(whichpopup){
+      	console.log("showpopup has been run");
         var docHeight = $(document).height(); //grab the height of the page
         var scrollTop = $(window).scrollTop(); //grab the px value from the top of the page to where you're scrolling
         $('.overlay-bg').show().css({'height' : docHeight}); //display your popup background and set height to the page height
